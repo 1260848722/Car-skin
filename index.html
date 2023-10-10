@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h3>如何访问 IFRAME 元素的演示</h3>
+
+    <iframe id="myFrame" src="https://www.w3school.com.cn/jsref/dom_obj_frame.asp"></iframe>
+
+    <p>单击按钮以获取 iframe 的 URL。</p>
+
+    <button onclick="myFunction()">试一试</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            console.log(window.frames[0].document)
+        }
+    </script>
+
+</body>
+
+</html>
